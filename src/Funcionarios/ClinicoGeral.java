@@ -12,13 +12,13 @@ public final class ClinicoGeral extends Medico {
     @Override
     public String realizarDiagnostico(List<String> sintomas) {
 
-        String stringSintomas = "";
+        String Sintomas = "";
 
         for(int i = 0; i < sintomas.size(); i++) {
-            stringSintomas += sintomas.get(i);
+            Sintomas += sintomas.get(i);
         }
         return "O Dr. " + getNome() + " constata que o paciente está com os seguintes sintomas: "
-                + stringSintomas + "\n\nSolicito ao paciente um exame de sangue para mais detalhes e melhor diagnóstico.\n" +
+                + Sintomas + "\n\nSolicito ao paciente um exame de sangue para mais detalhes e melhor diagnóstico.\n" +
                 "Medicação: PARACETAMOL, CLORIDATO DE CLOBUTINOL + SUCCINATO DE DOXILAMINA";
     }
 
